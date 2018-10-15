@@ -15,14 +15,11 @@ import AddItem from './components/AddItem.js';
 // Disable SAVE button unless text is available
 // Add Edit button/icon on ToDo item
 
-// functions passed down from here, used in other components
-
 class App extends Component {
   constructor() {
     super()
     this.state = {
       'todo' : '',
-      // Is this not really an Array?
       'todos' : []
     };
   }
@@ -36,10 +33,6 @@ class App extends Component {
   }
 
   addTodo = () => {
-    // let todo = this.state.todo;
-    // let list = this.state.todos;
-    // let newList = list.push(todo);
-    // this.setState({ todos: newList });
     const newTodos = Array.from(this.state.todos);
     newTodos.push(this.state.todo);
     this.setState({ todos: newTodos });
