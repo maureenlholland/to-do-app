@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #9bacb8;
+  position: relative;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+footer p {
+	margin: 10px;
+	font-size: 12px;
+}
+
+/*  
+Colors
+
+#edfafd
+#9bacb8 paleblue
+#e3bab3 petal
+#613a43 burgundy
+#849974 fresh
+#36384c charcoal
+*/
+
+.notepad {
+	max-width: 500px;
+	width: 100%;
+	margin: 50px auto;
+	padding-bottom: 20px;
+	background: white;
+}
+
+h1 {
+	background: #36384c;
+	color: white;
+	margin: 0 0 20px 0;
+	padding: 20px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0px;
+}
+
+li {
+	padding: 10px;
+	margin: 10px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid gray;
+}
+
+input {
+	padding: 10px;
+	border: 2px solid transparent;
+	margin: 10px auto;
+	width: 300px;
+}
+
+input:focus {
+	outline: 2px solid #36384c;
+}
+
+input,
+label {
+	display: block;
+}
+
+.btn {
+	padding: 10px 20px;
+	border-radius: 0;
+	font-weight: bold;
+	color: white;
+}
+
+.btn--add {
+	border: 2px solid #849974;
+	background: #849974;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	padding-right: 40px;
+	padding-left: 40px;
+	margin-top: 20px;
+	transition: background 0.3s;
+}
+
+.btn--add:hover,
+.btn--add:focus {
+	background: #384d28;
+}
+
+.btn--remove {
+	color: white;
+	border: 2px solid #613a43;
+	background: #613a43;
+}
+
+.btn[disabled] {
+	color: gray;
+	border: 2px solid gray;
+	background: lightgray;
+}
